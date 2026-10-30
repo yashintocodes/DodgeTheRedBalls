@@ -1,68 +1,62 @@
-\# 🎮 Dodge The Red Balls
+# 🎮 Dodge The Red Balls
 
+![Unity](https://img.shields.io/badge/Unity-2D%20Engine-black?style=for-the-badge&logo=unity)
+![C#](https://img.shields.io/badge/Language-C%23-blue?style=for-the-badge&logo=c-sharp)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
+A fast-paced, interactive 2D arcade survival game built in Unity. Navigate the arena, avoid hazardous red obstacles, collect power-up items, and set new high scores!
 
-A fast-paced, 2D Unity arcade game where players navigate a dynamic playfield to dodge hazardous obstacles, collect score-boosting power-ups, and chase high scores.
+---
 
+## 📸 Overview & Gameplay
 
+In **Dodge The Red Balls**, players control an entity in a high-stakes arena where survival depends on quick reflexes and state control.
 
-\---
+* 🔴 **Red Balls (Hazards)**: Collision triggers an instant Game Over state.
+* 🔵 **Blue Balls (Power-Ups)**: Collectible objects that boost your score multiplier and enhance player survival capabilities.
+* 🏆 **High Score Tracking**: Automatically saves your highest score across sessions using Unity's `PlayerPrefs` data persistence API.
 
+---
 
+## ⚡ Core Features
 
-\## 🌟 Key Features
+* **Complete UI Architecture**:
+  * Persistent top-level HUD with score and high-score displays using **TextMeshPro**.
+  * On-screen toggleable Pause Menu (`PauseMenuPanel`) with fully wired **Resume**, **Restart**, and **Quit** operations.
+* **Custom Audio & Visual Presentation**:
+  * Immersive background music loop powered by an optimized `AudioSource` component.
+  * Support for static canvas backgrounds and dynamic looping video backgrounds rendered via `VideoPlayer` and `RenderTexture`.
+  * Multi-layered Z-depth sorting to ensure gameplay elements remain crisp and visible over background media.
+* **Clean Code Structure**:
+  * Event-driven game loop managed via a centralized `GameManager` script.
+  * Strict separation between gameplay physics and UI overlay systems.
 
+---
 
+## 🎮 Controls
 
-\* \*\*Dynamic Gameplay\*\*: Navigate around hazardous red balls that end the game on collision while collecting blue power-up balls to increase your score multiplier and boost performance.
+| Action | Input |
+| :--- | :--- |
+| **Move Player** | `W` `A` `S` `D` / Arrow Keys |
+| **Pause / Resume** | `Esc` / On-Screen Pause Button |
 
-\* \*\*Persistent High Scores\*\*: High-score tracking saved seamlessly across game sessions using Unity `PlayerPrefs`.
+---
 
-\* \*\*Complete UI System\*\*:
+## 🛠️ Tech Stack
 
-&#x20; \* On-screen persistent pause toggle (`||` / `Pause`).
+* **Engine**: Unity 2022+ (2D Pipeline)
+* **Language**: C#
+* **UI Component**: TextMeshPro & Unity Canvas
+* **Version Control**: Git & GitHub
 
-&#x20; \* Contextual `PauseMenuPanel` with \*\*Resume\*\*, \*\*Restart\*\*, and \*\*Quit\*\* options wired directly to `GameManager` script functions.
+---
 
-\* \*\*Customizable Audio \& Visuals\*\*:
+## 🚀 Getting Started
 
-&#x20; \* Integrated background music using Unity's `AudioSource`.
+### Prerequisites
+Make sure you have **Unity Hub** and a compatible Unity Editor version installed.
 
-&#x20; \* Support for static background images or dynamic looping background videos via `VideoPlayer` and `RenderTexture`.
-
-&#x20; \* Configured Z-depth and 2D sorting layers to ensure clear rendering of gameplay elements over background media.
-
-
-
-\---
-
-
-
-\## 🛠️ Built With
-
-
-
-\* \*\*Engine\*\*: Unity (2D)
-
-\* \*\*Language\*\*: C#
-
-\* \*\*UI Framework\*\*: Unity Canvas \& TextMeshPro
-
-\* \*\*Version Control\*\*: Git \& GitHub
-
-
-
-\---
-
-
-
-\## 🚀 How to Run Locally
-
-
-
-1\. \*\*Clone the repository\*\*:
-
-&#x20;  ```bash
-
-&#x20;  git clone \[https://github.com/yashintocodes/DodgeTheRedBalls.git](https://github.com/yashintocodes/DodgeTheRedBalls.git)
-
+### Installation
+1. **Clone the Repository**:
+   ```bash
+   git clone [https://github.com/yashintocodes/DodgeTheRedBalls.git](https://github.com/yashintocodes/DodgeTheRedBalls.git)
